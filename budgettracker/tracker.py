@@ -23,5 +23,5 @@ def tracker():
         elif first_choice == "view":
             print("view")
         else:
-            print("Please type in a valid command to continue. You can also type 'tutorial' to go back to the tutorial")
+            print("Please type in a valid command to continue. You can also type 'tutorial' to go back to the tutorial.")
             continue
