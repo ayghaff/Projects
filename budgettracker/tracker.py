@@ -8,7 +8,7 @@ def tracker():
         print("Would you like to (add) a budget or (view) your currently existing ones?")
         first_choice = input().lower()
         if not first_choice in command_list:
-            print("Please type in a valid command to continue. You can also type 'tutorial' to go back to the tutorial")
+            print("Please type in a valid command to continue. You can also type 'tutorial' to go back to the tutorial.")
             continue
         elif first_choice == "tutorial":
             print("tutorial")
