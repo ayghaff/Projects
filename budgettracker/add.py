@@ -28,6 +28,7 @@ def main():
     with open("tracker.csv", "a", newline="") as csvfile:
         writer = csv.writer(csvfile)
         track_input = ask_for_input()
+        track_input[1] = f"${float(track_input[1]):.2f}"
         writer.writerow(track_input)
 
 if __name__ == "__main__":

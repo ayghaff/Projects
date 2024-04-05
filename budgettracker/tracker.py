@@ -1,4 +1,3 @@
-import csv
 import firstuse
 import view
 import add
@@ -6,7 +5,7 @@ import add
 def tracker():
     command_list = ["add", "remove", "view", "tutorial"]
     while True:
-        print("Would you like to add a budget or review your currently existing ones?")
+        print("Would you like to (add) a budget or (view) your currently existing ones?")
         first_choice = input().lower()
         if not first_choice in command_list:
             print("Please type in a valid command to continue. You can also type 'tutorial' to go back to the tutorial")
@@ -19,9 +18,9 @@ def tracker():
             print("As of right now, the function for removing budgets is currently unavailable, and will have to be deleted manually within the file.")
             continue
         elif first_choice == "add":
-            print("add")
+            add.main()
         elif first_choice == "view":
-            print("view")
+            view.main()
         else:
             print("Please type in a valid command to continue. You can also type 'tutorial' to go back to the tutorial.")
             continue

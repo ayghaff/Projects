@@ -10,23 +10,19 @@ def check_first_use(lines):
         else:
             return True
     except IndexError:
-        print("not exist")
         return True
 
 def main():
-    with open(r"budgettracker\firstuse.txt", "r") as file:
+    with open(r"firstuse.txt", "r") as file:
         lines = file.readlines()
 
     checking = check_first_use(lines)
     print(checking)
 
     if checking:
-        print("work")
         firstuse.start_up()
-    elif not checking:
-        print("work but fals")
     else:
-        print("no work")
+        pass
 
     tracker.tracker()
 
